@@ -10,8 +10,8 @@ def Convert(string):
     li = list(string.split(","))
     return li 
 #Remove extra characters func
-def ploty(p1):
-    y=lines[p1]
+def ploty(line):
+    y=lines[line]
     for sub in bad_chars: 
         y = y.replace(sub,'')
     y=list(map(int, Convert(y)))
